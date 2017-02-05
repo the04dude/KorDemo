@@ -7,7 +7,7 @@ namespace Kor.Web.Controllers.Api
 {
     public class CarsController : ApiController
     {
-        DataService ds = new DataService(new ConcreteDataProvider());
+        DataService ds = null;
 
         public CarsController(IDataProvider dataProvider)
         {
